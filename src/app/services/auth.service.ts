@@ -8,10 +8,9 @@ import { map } from 'rxjs/operators';
 })
 export class AuthService {
 
-  //https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=[API_KEY]
-  //https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=[API_KEY]
-  private url = 'https://identitytoolkit.googleapis.com/v1/accounts';
-  private apikey = 'AIzaSyDYXJP7Pgk7mZVuAT9W0txT1h7YKvkbpZc';
+  
+  private url = '';
+  private apikey = '';
   userToken:string;
 
   constructor(private http:HttpClient) {
